@@ -230,6 +230,7 @@ def main(argv=sys.argv):
         mosaic_args['verbose'] = True
     mosaic_args['flip_mosaic_x'] = args.flip_mosaic_x
     mosaic_args['flip_mosaic_y'] = args.flip_mosaic_y
+    mosaic_args['subpixel_shift'] = not args.no_resample
 
     try:
         if args.plates:
